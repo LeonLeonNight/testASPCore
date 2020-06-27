@@ -11,7 +11,7 @@ namespace test_aspNetMvc_ef.Service
     {
         public string Buy(Purchase purchase)
         {
-            BookContext db = new BookContext();
+            DataBaseContext db = new DataBaseContext();
             purchase.Date = DateTime.Now;
             db.Purchases.Add(purchase);
             db.SaveChanges();

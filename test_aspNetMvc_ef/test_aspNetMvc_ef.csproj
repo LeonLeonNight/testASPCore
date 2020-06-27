@@ -129,12 +129,13 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ExecuteResController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HttpContextController.cs" />
     <Compile Include="Controllers\ImgResController.cs" />
     <Compile Include="Controllers\IpController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\DAL\DbContexts\BookContext.cs" />
+    <Compile Include="Models\DAL\DbContexts\DataBaseContext.cs" />
     <Compile Include="Models\DAL\Entity\Book.cs" />
     <Compile Include="Models\DAL\Entity\Purchase.cs" />
     <Compile Include="Models\DAL\Initializer\BookDbInitializer.cs" />
@@ -186,6 +187,8 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Buy.cshtml" />
+    <Content Include="Views\Home\EditBook.cshtml" />
+    <Content Include="Views\Home\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Interfaces\" />

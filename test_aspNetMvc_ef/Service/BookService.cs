@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
 using test_aspNetMvc_ef.Models.DAL.DbContexts;
@@ -9,12 +10,41 @@ namespace test_aspNetMvc_ef.Service
 {
     public class BookService
     {
-        public IEnumerable<Book> GetAllBooks()
+        private DataBaseContext db = new DataBaseContext();
+        
+        public void Update(Book book)
         {
-            BookContext db = new BookContext();
+            db.Entry(book).State = EntityState.Modified;
+            db.SaveChanges();
+        }
+
+        public void Create(Book book)
+        {
+            db.Books.Add(book);
+            db.SaveChanges();
+        }
+        public void Delete(int bookid)
+        {
+            var book = db.Books.Find(bookid);
+            if(book != null)
+            {
+                db.Entry(book).State = EntityState.Deleted;
+                db.Books.Remove(book);
+                db.SaveChanges();
+            }
+        }
+
+        public IEnumerable<Book> GetAll()
+        {
+            //BookContext db = new BookContext();
             var result = db.Books;
             return result;
         }
 
+        public Book GetById(int? bookid)
+        {
+            var result = db.Books.Find(bookid);
+            return result;
+        }
     }
 }

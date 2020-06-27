@@ -26,9 +26,14 @@
                     <td><p>@b.Author</p></td>
                     <td><p>@b.Price</p></td>
                     <td><p><a href="/Home/Buy/@b.Id">Купить</a></p></td>
+                    <td><p><a href="/Home/EditBook/@b.Id">Редактировать описание</a></p></td>
+                    <td><p><a href="/Home/Delete/@b.Id">Удалить</a></p></td>
                 </tr>
             }
         </table>
+    </div>
+    <div class="row">
+        <a href="/Home/Create/">Добавить новую книгу</a>
     </div>
 </body>
 </html>

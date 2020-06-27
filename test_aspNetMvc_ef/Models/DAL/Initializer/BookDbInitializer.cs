@@ -8,9 +8,9 @@ using test_aspNetMvc_ef.Models.DAL.Entity;
 
 namespace test_aspNetMvc_ef.Models.DAL.Initializer
 {
-    public class BookDbInitializer : DropCreateDatabaseAlways<BookContext>
+    public class BookDbInitializer : DropCreateDatabaseAlways<DataBaseContext>
     {
-        protected override void Seed(BookContext db)
+        protected override void Seed(DataBaseContext db)
         {
             db.Books.Add(new Book { Name = "Война и мир", Author = "Л. Толстой", Price = 220 });
             db.Books.Add(new Book { Name = "Отцы и дети", Author = "И. Тургенев", Price = 180 });
