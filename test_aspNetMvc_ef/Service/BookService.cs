@@ -16,13 +16,16 @@ namespace test_aspNetMvc_ef.Service
         {
             db.Entry(book).State = EntityState.Modified;
             db.SaveChanges();
+            db.Dispose();
         }
 
         public void Create(Book book)
         {
             db.Books.Add(book);
             db.SaveChanges();
+            db.Dispose();
         }
+
         public void Delete(int bookid)
         {
             var book = db.Books.Find(bookid);
@@ -31,6 +34,7 @@ namespace test_aspNetMvc_ef.Service
                 db.Entry(book).State = EntityState.Deleted;
                 db.Books.Remove(book);
                 db.SaveChanges();
+                db.Dispose();
             }
         }
 
@@ -38,12 +42,14 @@ namespace test_aspNetMvc_ef.Service
         {
             //BookContext db = new BookContext();
             var result = db.Books;
+            db.Dispose();
             return result;
         }
 
         public Book GetById(int? bookid)
         {
             var result = db.Books.Find(bookid);
+            db.Dispose();
             return result;
         }
     }
