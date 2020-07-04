@@ -1,2 +1,2 @@
 # testASPCore
-ASP.Net.MVC5 + EF
+ASP.Net Core + WebAPI
