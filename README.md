@@ -1,2 +1,2 @@
-# test_EF_ASPNETMVC
+# testASPCore
 ASP.Net.MVC5 + EF
