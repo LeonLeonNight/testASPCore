@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\testCoreWebAPI",
+    "\\testCoreWebAPI\\Areas",
+    "\\testCoreWebAPI\\Areas\\Identity",
+    "\\testCoreWebAPI\\Areas\\Identity\\Pages",
+    "\\testCoreWebAPI\\Areas\\Identity\\Pages\\Account",
+    "\\testCoreWebAPI\\Models",
+    "\\testCoreWebAPI\\Models\\DataBaseContext",
+    "\\testCoreWebAPI\\Pages",
+    "\\testCoreWebAPI\\Pages\\Shared"
+  ],
+  "SelectedNode": "\\testCoreWebAPI\\Pages\\Shared\\_LoginPartial.cshtml",
+  "PreviewInSolutionExplorer": false
+}
