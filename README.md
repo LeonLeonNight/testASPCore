@@ -1,2 +1,2 @@
 # testASPCore
-ASP.Net Core + WebAPI
+ASP.Net Core MVC + APIController
