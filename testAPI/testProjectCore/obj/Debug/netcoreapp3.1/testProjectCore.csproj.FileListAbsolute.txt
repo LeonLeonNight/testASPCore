@@ -155,3 +155,4 @@ C:\Users\User\Desktop\test_EF_ASPNETMVC\testAPI\testProjectCore\obj\Debug\netcor
 C:\Users\User\Desktop\test_EF_ASPNETMVC\testAPI\testProjectCore\obj\Debug\netcoreapp3.1\Razor\Views\Users\Create.cshtml.g.cs
 C:\Users\User\Desktop\test_EF_ASPNETMVC\testAPI\testProjectCore\obj\Debug\netcoreapp3.1\Razor\Views\Users\Edit.cshtml.g.cs
 C:\Users\User\Desktop\test_EF_ASPNETMVC\testAPI\testProjectCore\obj\Debug\netcoreapp3.1\Razor\Views\Users\Index.cshtml.g.cs
+C:\Users\User\Desktop\test_EF_ASPNETMVC\testAPI\testProjectCore\obj\Debug\netcoreapp3.1\Razor\Views\Contact\Index.cshtml.g.cs
